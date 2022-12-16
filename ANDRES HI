@@ -1,0 +1,148 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Pop it trading Script","BloodTheme")
+
+---Tabs
+
+local Tab1 = window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Main")
+local Tab2 = window:NewTab("Misc")
+local Tab2Section = Tab2:NewSection("Misc")
+local Tab3 = window:NewTab("Yo wsg Andres")
+local Tab3Section = Tab3:NewSection("Wanna buy stuffs now?")
+local Tab4 = window:NewTab("Buy code items!")
+local Tab4Section = Tab4:NewSection("Buy CODES ITEMS!")
+local Tab4Section = Tab4:NewSection("MORE COMING SOON!")
+local Tab5 = window:NewTab("Others")
+local Tab5Section = Tab5:NewSection("Here some scripts")
+local Tab6 = window:NewTab("Credits")
+local Tab6Section = Tab6:NewSection("JH JN GAMING")
+local Tab6Section = Tab6:NewSection("MADE BY ANDRES TO THE TOP")
+
+---Buttons
+
+Tab1Section:NewButton("Buy dart","Makes you Buy Dart ",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Dart")
+end)
+
+Tab1Section:NewButton("Buy Harambe","Makes You Buy Harambe with In game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Box Toy Harambe")
+end)
+
+Tab2Section:NewButton("Buy f","Makes you Buy f with In game Money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("F")
+end)
+
+Tab3Section:NewButton("Buy Green Ooze","Makes you Buy Green Ooze With in game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Green Ooze")
+end)
+
+Tab3Section:NewButton("Buy Retro bike","Makes you buy green ooze with in game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Retro Bike")
+end)
+
+Tab3Section:NewButton("Buy Walky talkie","Makes you buy walky talkie with in game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Walky Talkie")
+end)
+
+Tab4Section:NewButton("Buy XOX Controller","Makes you buy the Code item XOX Controller with game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("XOX Controller")
+end)
+
+Tab4Section:NewButton("Buy Inxta","Makes you Buy the Code item inxta with game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Inxta")
+end)
+
+Tab5Section:NewButton("inf score","Makes you get inf score",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Balligusapos/Balligusapos/main/video.mp4"))()
+end)
+
+Tab5Section:NewButton("Andres Hitbox","Makes you get script of hitbox of Andres",function()
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local Hitbox = 
+Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+main.Position = UDim2.new(0.40427351, 0, 0.34591195, 0)
+main.Size = UDim2.new(0, 200, 0, 100)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(139,0,0)
+label.Size = UDim2.new(0, 100, 0, 20)
+label.Font = Enum.Font.SourceSans
+label.Text = "Andres Hitbox"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextScaled = true
+label.TextSize = 5.000
+label.TextWrapped = true
+
+Hitbox.Name = "My Hitbox"
+Hitbox.Parent = main
+Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
+Hitbox.Size = UDim2.new(0, 90, 0, 40)
+Hitbox.Font = Enum.Font.SourceSans
+Hitbox.Text = "Hitbox"
+Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hitbox.TextSize = 40.000
+Hitbox.MouseButton1Down:connect(function()
+	_G.HeadSize = 50
+
+	_G.Disabled = true
+
+
+game:GetService('RunService').RenderStepped:connect(function()
+		if _G.Disabled then
+			for i,v in next, game:GetService('Players'):GetPlayers() do
+				if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+					pcall(function()
+						v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+						v.Character.HumanoidRootPart.Transparency = 0.7
+						v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really black")
+						v.Character.HumanoidRootPart.Material = "Neon"
+						v.Character.HumanoidRootPart.CanCollide = false
+					end)
+				end
+			end
+		end
+	end)
+end)
+end)
+
+Tab5Section:NewButton("Fly","Makes you fly like bird",function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+
+
+end)
+
+Tab3Section:NewButton("Buy Demogorgan","Makes you buy Demogorgan in game money",function()
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer("Demogorgan")
+end)
+
+Tab5Section:NewButton("Admin commands","Makes you have infinite yield admin",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab5Section:NewButton("My other Hub","Makes you get other script of mine",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/DerpX/main/main.lua", true))()
+end)
+
+Tab5Section:NewButton("Viper hub Only Chosen one","Makes you get script of Viper Chosen one",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/SleeksScripts/Newer-VIPER-Script-Hub/main/Script")()
+end)
+
+Tab5Section:NewButton("TAKII SCRIPT AND AUTO DROP","Best script you cane ever ask for",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jh0nySims/Takiis/main/Main/First/Attept/source"))()
+end)
+
+Tab5Section:NewButton("Destroyer Games-HUB-Destroyer-V4","VERY BEST GAMES FARMING",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-HUB-Destroyer-V4/main/Games%20HUB%20Destroyer%20V4"))()
+end)
